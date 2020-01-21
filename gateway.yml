@@ -18,11 +18,11 @@ security:
   oauth2:
     client:
       clientId: gateway
-      accessTokenUri: http://localhost:5000/oauth/token
+      accessTokenUri: https://azure-spring-cloud-demo-auth-service.azuremicroservices.io/oauth/token
       grant-type: client_credentials
       scope: server
     resource:
-      user-info-uri: http://localhost:5000/users/current
+      user-info-uri: https://azure-spring-cloud-demo-auth-service.azuremicroservices.io/users/current
 
 hystrix:
   command:
